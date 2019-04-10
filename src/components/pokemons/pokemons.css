@@ -1,0 +1,36 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h4, p {
+  margin: 0;
+  padding: 0;
+}
+li {
+  padding: 5px;
+}
+.pokemons {
+  display: flex;
+  flex-direction: column;
+}
+.pokemons div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pokemons div button{
+  height: 30px;
+}
+.pokemon {
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+}
+.pokemon div{
+  display: block;
+}
+.pages {
+  display: inline;
+
+}
