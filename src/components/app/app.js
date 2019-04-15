@@ -19,9 +19,8 @@ export default class App extends Component {
     this.previousPage = this.previousPage.bind(this);
     this.nextPage = this.nextPage.bind(this);
 
-    const pokemons = [];
-
-    this.pokapi.getData().then((data) => {;
+    this.pokapi.getData().then((data) => {
+      data.sort((a ,b) => a.id - b.id)
       this.setState({
         pokemons: data
       });
